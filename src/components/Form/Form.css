@@ -1,0 +1,443 @@
+:root {
+  --frog-primary: #10b981;
+  --frog-primary-hover: #059669;
+  --frog-text: #1f2937;
+  --frog-text-light: #6b7280;
+  --frog-border: #e5e7eb;
+  --frog-bg: #f9fafb;
+  --frog-bg-input: #f3f4f6;
+  --frog-success: #10b981;
+  --frog-error: #ef4444;
+  --frog-radius: 0.5rem;
+  --frog-radius-lg: 1rem;
+}
+
+/* ─── Layout ─────────────────────────────────────────────── */
+
+.frog__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+}
+
+.frog__form {
+  width: 100%;
+  max-width: 640px;
+  background: white;
+  border-radius: var(--frog-radius-lg);
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Header ─────────────────────────────────────────────── */
+
+.frog__header {
+  margin-bottom: 2rem;
+}
+
+.frog__title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--frog-text);
+  letter-spacing: -0.02em;
+}
+
+/* ─── Row ────────────────────────────────────────────────── */
+
+.frog__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* ─── Field ──────────────────────────────────────────────── */
+
+.frog__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.frog__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--frog-text);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.frog__error {
+  color: var(--frog-error);
+  font-size: 0.75rem;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ─── Icons ──────────────────────────────────────────────── */
+
+.frog__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--frog-primary);
+  flex-shrink: 0;
+}
+
+.frog__icon-upload {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ─── Inputs ─────────────────────────────────────────────── */
+
+.frog__field input[type="text"],
+.frog__field input[type="email"],
+.frog__field input[type="tel"],
+.frog__field input[type="date"],
+.frog__field textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--frog-border);
+  border-radius: var(--frog-radius);
+  font-size: 0.9375rem;
+  color: var(--frog-text);
+  background-color: var(--frog-bg-input);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.frog__field input::placeholder,
+.frog__field textarea::placeholder {
+  color: var(--frog-text-light);
+}
+
+.frog__field input:focus,
+.frog__field textarea:focus {
+  outline: none;
+  border-color: var(--frog-primary);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* ─── Date ───────────────────────────────────────────────── */
+
+.frog__date {
+  display: flex;
+  gap: 8px;
+}
+
+.frog__date select {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid var(--frog-border);
+  border-radius: var(--frog-radius);
+  font-size: 0.9375rem;
+  color: var(--frog-text);
+  background-color: var(--frog-bg-input);
+  transition: all 0.2s ease;
+  font-family: inherit;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%236b7280' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 2rem;
+}
+
+.frog__date select:focus {
+  outline: none;
+  border-color: var(--frog-primary);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* ─── Phone ──────────────────────────────────────────────── */
+
+.frog__phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.frog__phone-prefix_cos{
+    font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--frog-text);
+  white-space: nowrap;
+  padding: 1rem;
+  background-color: var(--frog-bg-input);
+  border: 1px solid var(--frog-border);
+  border-radius: var(--frog-radius);
+  line-height: 1;
+  width: 100px;
+}
+.frog__phone-prefix {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--frog-text);
+  white-space: nowrap;
+  padding: 1rem;
+  background-color: var(--frog-bg-input);
+  border: 1px solid var(--frog-border);
+  border-radius: var(--frog-radius);
+  line-height: 1;
+}
+
+.frog__phone input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid var(--frog-border);
+  border-radius: var(--frog-radius);
+  font-size: 0.9375rem;
+  color: var(--frog-text);
+  background-color: var(--frog-bg-input);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.frog__phone input::placeholder {
+  color: var(--frog-text-light);
+}
+
+.frog__phone input:focus {
+  outline: none;
+  border-color: var(--frog-primary);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* ─── Upload ─────────────────────────────────────────────── */
+
+.frog__upload {
+  border: 2px dashed var(--frog-border);
+  border-radius: var(--frog-radius-lg);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: var(--frog-bg-input);
+}
+
+.frog__upload:hover {
+  border-color: var(--frog-primary);
+  background-color: #d1fae5;
+}
+
+.frog__upload-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.frog__upload-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 0.75rem;
+  color: var(--frog-primary);
+}
+
+.frog__upload-title {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--frog-text);
+  margin: 0;
+}
+
+.frog__upload-sub {
+  font-size: 0.875rem;
+  color: var(--frog-text-light);
+  margin: 0;
+}
+
+.frog__upload-btn {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--frog-primary);
+  color: white;
+  border: none;
+  border-radius: var(--frog-radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: inherit;
+}
+
+.frog__upload-btn:hover {
+  background-color: var(--frog-primary-hover);
+}
+
+.frog__upload-selected {
+  font-size: 0.875rem;
+  color: var(--frog-success);
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.frog__upload-hint {
+  font-size: 0.75rem;
+  color: var(--frog-text-light);
+  margin-top: 0.5rem;
+}
+
+/* ─── Checkbox ───────────────────────────────────────────── */
+
+.frog__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--frog-text);
+  cursor: pointer;
+}
+
+.frog__checkbox input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.125rem;
+  cursor: pointer;
+  accent-color: var(--frog-primary);
+  flex-shrink: 0;
+}
+
+/* ─── Policy button ──────────────────────────────────────── */
+
+.frog__policy-btn {
+  background: none;
+  border: none;
+  color: var(--frog-primary);
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.frog__policy-btn:hover {
+  text-decoration: underline;
+}
+
+/* ─── Submit ─────────────────────────────────────────────── */
+
+.frog__submit {
+  width: 100%;
+  padding: 0.875rem 1.5rem;
+  background-color: var(--frog-primary);
+  color: white;
+  border: none;
+  border-radius: var(--frog-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+  font-family: inherit;
+}
+
+.frog__submit:hover:not(:disabled) {
+  background-color: var(--frog-primary-hover);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  transform: translateY(-1px);
+}
+
+.frog__submit:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.frog__submit:disabled {
+  background-color: var(--frog-text-light);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* ─── Status ─────────────────────────────────────────────── */
+
+.frog__status {
+  padding: 1rem;
+  border-radius: var(--frog-radius);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  animation: frogSlideIn 0.3s ease;
+}
+
+.frog__status--success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid var(--frog-success);
+}
+
+.frog__status--error {
+  background-color: #fee2e2;
+  color: #7f1d1d;
+  border: 1px solid var(--frog-error);
+}
+
+@keyframes frogSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .frog__form {
+    padding: 1.5rem;
+  }
+
+  .frog__title {
+    font-size: 1.5rem;
+  }
+
+  .frog__row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .frog__date {
+    flex-direction: column;
+  }
+
+  .frog__upload {
+    padding: 1.5rem;
+  }
+
+  .frog__upload-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frog__field input,
+  .frog__field textarea,
+  .frog__date select,
+  .frog__phone input,
+  .frog__submit,
+  .frog__upload {
+    transition: none;
+  }
+
+  @keyframes frogSlideIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}

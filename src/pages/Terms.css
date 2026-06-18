@@ -1,0 +1,175 @@
+/* terms.css */
+.bg-terms{
+   background: #f5f7fa;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terms-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 120px 24px 80px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+
+/* Hero */
+.terms-hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.terms-hero__icon {
+  width: 56px;
+  height: 56px;
+  background: #e8edf7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.terms-hero__icon svg {
+  width: 26px;
+  height: 26px;
+  color: #3b5bdb;
+  stroke: #3b5bdb;
+  fill: none;
+}
+
+.terms-hero__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 10px;
+  letter-spacing: -0.5px;
+}
+
+.terms-hero__subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0 0 8px;
+}
+
+.terms-hero__date {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* Intro paragraph */
+.terms-intro {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 40px;
+  padding: 0 4px;
+}
+
+/* Section cards */
+.terms-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 28px 32px;
+  margin-bottom: 16px;
+}
+
+.terms-section__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.terms-section__icon {
+  width: 38px;
+  height: 38px;
+  background: #e8edf7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.terms-section__icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: #3b5bdb;
+  fill: none;
+  stroke-width: 1.8;
+}
+
+.terms-section__title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.terms-section__body p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #4b5563;
+  margin: 0 0 12px;
+}
+
+.terms-section__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Legal questions block */
+.terms-legal {
+  text-align: center;
+  padding: 40px 24px 0;
+}
+
+.terms-legal__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 6px;
+}
+
+.terms-legal__text {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 14px;
+}
+
+.terms-legal__link {
+  display: inline-block;
+  font-size: 14px;
+  color: #3b5bdb;
+  text-decoration: none;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 8px 20px;
+  background: #eef2ff;
+  transition: background 0.15s;
+}
+
+.terms-legal__link:hover {
+  background: #e0e7ff;
+}
+
+@media (max-width: 600px) {
+  .terms-page {
+    padding: 36px 16px 60px;
+  }
+
+  .terms-section {
+    padding: 20px 18px;
+  }
+
+  .terms-hero__title {
+    font-size: 28px;
+  }
+}

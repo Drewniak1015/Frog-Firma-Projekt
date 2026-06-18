@@ -1,0 +1,213 @@
+.faqPage {
+  font-family: "Inter", Arial, sans-serif;
+  color: #0f172a;
+  background: #fff;
+}
+
+/* ── TLO 1: gradient hero ── */
+.faqHero {
+  background: linear-gradient(160deg, #eaf1fb 0%, #f0f4fa 60%, #e8eef8 100%);
+  padding: 48px 64px 120px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faqHeroInner {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faqHeroWrapper {
+  width: 100%;
+  padding-top:  68px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(160deg, #eaf1fb 0%, #f0f4fa 60%, #e8eef8 100%);
+}
+
+/* hero ma max width */
+.faqHero {
+  width: 100%;
+  max-width: 1100px;
+  padding: 64px 24px 120px 24px;
+}
+.faqBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #dbeeff;
+  color: #0073d8;
+  font-size: 13px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.faqHeading {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: #0f172a;
+  margin: 0;
+}
+
+.faqSubheading {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 520px;
+}
+
+/* ── TLO 2: akordeony — osobny div nakłada się na gradient ── */
+.faqAccordionWrapper {
+  position: relative;
+  z-index: 10;
+  margin-top: -72px;
+  padding: 0 64px 80px 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.faqAccordion {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(16, 24, 40, 0.10), 0 1px 4px rgba(16, 24, 40, 0.06);
+  overflow: hidden;
+}
+
+/* ── Pojedynczy item ── */
+.faqItem {
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: background 0.18s ease;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqItem:hover {
+  background: #f8fafc;
+}
+
+.faqItem--open {
+  background: #f8fafc;
+}
+
+/* ── Pytanie ── */
+.faqQuestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 28px;
+}
+
+.faqQuestion span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* ── Chevron ── */
+.faqChevron {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.faqChevron--open {
+  background: #dbeeff;
+  color: #0073d8;
+}
+
+/* ── Odpowiedź (animowana przez framer-motion) ── */
+.faqAnswer {
+  overflow: hidden;
+}
+
+.faqAnswer p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.75;
+  margin: 0;
+  padding: 0 28px 22px 28px;
+}
+
+/* ── CTA ── */
+.faqCta {
+  padding: 100px 24px;
+  background: linear-gradient(135deg, #0084ff, #0057b8);
+  color: white;
+  text-align: center;
+}
+
+.faqCta h2 {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0 0 16px;
+}
+
+.faqCta p {
+  font-size: 15px;
+  color: #dbeafe;
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0 auto 32px;
+}
+
+.faqCta button {
+  background: white;
+  color: #0073d8;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.faqCta button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .faqHero {
+    padding: 40px 20px 110px 20px;
+  }
+
+  .faqAccordionWrapper {
+    padding: 0 16px 60px 16px;
+    margin-top: -60px;
+  }
+
+  .faqQuestion {
+    padding: 18px 20px;
+  }
+
+  .faqAnswer p {
+    padding: 0 20px 18px 20px;
+  }
+
+  .faqHeading {
+    font-size: 32px;
+  }
+}
