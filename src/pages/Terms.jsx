@@ -100,7 +100,7 @@ const SECTIONS = [
       </svg>
     ),
     paragraphs: [
-      "Niniejsze warunki korzystania z usług podlegają prawu belgijskiemu. Wszelkie spory związane z niniejszymi warunkami będą podlegać wyłącznej jurysdykcji sądów w Brukseli w Belgii.",
+      "Niniejsze warunki korzystania z usług podlegają prawu polskiemu. Wszelkie spory związane z niniejszymi warunkami będą podlegać wyłącznej jurysdykcji sądów w Brukseli w Belgii.",
       "Jeżeli jakiekolwiek postanowienie niniejszych warunków zostanie uznane za nieważne lub niewykonalne, pozostałe postanowienia pozostają w pełnej mocy i są skuteczne.",
       "Niewykonanie prawa wynikającego z niniejszych warunków nie stanowi zrzeczenia się tego prawa. Niniejsze warunki stanowią całość porozumienia między Tobą a Frog Group w zakresie korzystania ze strony.",
     ],
