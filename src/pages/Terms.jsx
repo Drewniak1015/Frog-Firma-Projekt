@@ -27,7 +27,7 @@ const SECTIONS = [
       </svg>
     ),
     paragraphs: [
-      "Frog Group to firma specjalizująca się w usługach sprzedaży i marketingu w Belgii. Nasza strona internetowa dostarcza informacji o naszych usługach, ofertach pracy i wydarzeniach.",
+      "Frog Group to firma specjalizująca się w usługach sprzedaży i marketingu w Polsce. Nasza strona internetowa dostarcza informacji o naszych usługach, ofertach pracy i wydarzeniach.",
       "Oferujemy możliwości kariery w bezpośredniej sprzedaży i marketingu dla młodych profesjonalistów. Nasza platforma umożliwia kandydatom składanie wniosków i otrzymywanie informacji o dostępnych stanowiskach.",
       "Organizujemy również wydarzenia networkingowe i szkolenia zawodowe. Informacje o tych wydarzeniach są publikowane na naszej stronie i mogą ulec zmianie bez powiadomienia.",
     ],
@@ -100,7 +100,7 @@ const SECTIONS = [
       </svg>
     ),
     paragraphs: [
-      "Niniejsze warunki korzystania z usług podlegają prawu polskiemu. Wszelkie spory związane z niniejszymi warunkami będą podlegać wyłącznej jurysdykcji sądów w Brukseli w Belgii.",
+      "Niniejsze warunki korzystania z usług podlegają prawu polskiemu. Wszelkie spory związane z niniejszymi warunkami będą w Łodzi w Polsce.",
       "Jeżeli jakiekolwiek postanowienie niniejszych warunków zostanie uznane za nieważne lub niewykonalne, pozostałe postanowienia pozostają w pełnej mocy i są skuteczne.",
       "Niewykonanie prawa wynikającego z niniejszych warunków nie stanowi zrzeczenia się tego prawa. Niniejsze warunki stanowią całość porozumienia między Tobą a Frog Group w zakresie korzystania ze strony.",
     ],
