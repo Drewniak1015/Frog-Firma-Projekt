@@ -91,7 +91,7 @@ const SECTIONS = [
     paragraphs: [
       "Na mocy RODO przysługują Ci rozległe prawa w odniesieniu do Twoich danych osobowych. Masz prawo dostępu do swoich danych, ich sprostowania, jeśli są niedokładne, oraz żądania ich usunięcia w określonych okolicznościach.",
       "Możesz również żądać ograniczenia przetwarzania swoich danych, wnieść sprzeciw wobec określonego przetwarzania oraz zażądać przeniesienia swoich danych do innego administratora.",
-      "Aby skorzystać z tych praw, skontaktuj się z nami pod adresem wbialas@frog.info.pl Odpowiemy na Twoje żądanie w ciągu miesiąca. Jeśli uważasz, że Twoje prawa nie są respektowane, możesz złożyć skargę do Belgijskiego Urzędu Ochrony Danych.",
+      "Aby skorzystać z tych praw, skontaktuj się z nami pod adresem wbialas@frog.info.pl Odpowiemy na Twoje żądanie w ciągu miesiąca. Jeśli uważasz, że Twoje prawa nie są respektowane, możesz złożyć skargę do Polskiego Urzędu Ochrony Danych.",
     ],
   },
 ];
@@ -143,7 +143,7 @@ export default function PrivacyPolicy() {
         naszych użytkowników, kandydatów i partnerów biznesowych. Niniejsza polityka prywatności
         wyjaśnia, w jaki sposób zbieramy, wykorzystujemy, przechowujemy i chronimy Twoje dane
         osobowe zgodnie z Ogólnym Rozporządzeniem o Ochronie Danych (RODO) i obowiązującym prawem
-        belgijskim.
+        polskim.
       </p>
 
       {SECTIONS.map((section) => (
